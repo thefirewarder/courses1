@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11533110779"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-11533110779');
-  </script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fireward JavaScript Course</title>
+  <title>Fireward Courses</title>
   <style>
     body {
       font-family: system-ui, sans-serif;
@@ -27,27 +18,24 @@
     h1 {
       font-size: 2rem;
       color: #f97316;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
-    p {
-      margin-bottom: 1rem;
-    }
-
-    .cta-button {
-      display: inline-block;
+    .course-button {
+      display: block;
       background-color: #f97316;
       color: #ffffff;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: bold;
-      padding: 1rem 2rem;
+      padding: 1rem;
       border-radius: 8px;
+      text-align: center;
       text-decoration: none;
-      margin-top: 2rem;
+      margin-bottom: 1rem;
       transition: background-color 0.3s ease;
     }
 
-    .cta-button:hover {
+    .course-button:hover {
       background-color: #ea580c;
     }
 
@@ -60,38 +48,15 @@
 </head>
 <body>
 
-  <h1>🔥 Fireward JavaScript Course</h1>
+  <h1>📚 Fireward Courses</h1>
 
-  <p>Are you tired of binge-watching 12-hour "Make a game" JavaScript tutorials? Skipping around until you settle on the false thought that you aren't good enough at JavaScript? Whether these are your own words or you can partially relate to them, everyone's been there before, and that's why I created this course!</p>
-
-  <p>From print statements to making your own graphics, this course truly has it all. Made by a web developer who is proficient in JavaScript themself, you can rest assured that this course will most definitely be worth it. Other than just explaining the fundamentals, this course is packed with humor and reasoning that makes you keep going and think like a developer. This ensures you won't be coding and then forgetting two minutes later.</p>
-
-  <p>Accessing and using the files in this project will require knowing how to open files. If you don't know how to do those, watch a tutorial online; it is a relatively simple task.</p>
-
-  <p>Other than that, I hope you enjoy learning from my course as much as I enjoyed making it!</p>
-
-  <a class="cta-button" href="#" onclick="trackAndRedirect()">
-    Buy this course for $5
-  </a>
+  <a class="course-button" href="js.html">JavaScript Course ($5)</a>
+  <!-- Add more courses below as needed -->
+  <!-- <a class="course-button" href="python.html">Python Crash Course ($5)</a> -->
 
   <div class="footer">
-    <p>Hate the course for any reason? Email me at <a href="mailto:fireward.helpdesk@gmail.com">fireward.helpdesk@gmail.com</a> and I'll make it right.</p>
+    <p>Questions or issues? Email <a href="mailto:fireward.helpdesk@gmail.com">fireward.helpdesk@gmail.com</a></p>
   </div>
-
-  <!-- Event snippet for Purchase (14) conversion -->
-  <script>
-    function trackAndRedirect() {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-11533110779/fQziCKHN5PoaEPubtfsq',
-        'transaction_id': ''
-      });
-
-      // Wait briefly to let tracking fire before redirecting
-      setTimeout(() => {
-        window.open('https://firewardcourses.gumroad.com/l/js?wanted=true', '_blank');
-      }, 300);
-    }
-  </script>
 
 </body>
 </html>
