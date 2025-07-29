@@ -66,4 +66,33 @@
 
   <p>From print statements to making your own graphics, this course truly has it all. Made by a web developer who is proficient in JavaScript themself, you can rest assured that this course will most definitely be worth it. Other than just explaining the fundamentals, this course is packed with humor and reasoning that makes you keep going and think like a developer. This ensures you won't be coding and then forgetting two minutes later.</p>
 
-  <p>A
+  <p>Accessing and using the files in this project will require knowing how to open files. If you don't know how to do those, watch a tutorial online; it is a relatively simple task.</p>
+
+  <p>Other than that, I hope you enjoy learning from my course as much as I enjoyed making it!</p>
+
+  <a class="cta-button" href="#" onclick="trackAndRedirect()">
+    Buy this course for $5
+  </a>
+
+  <div class="footer">
+    <p>Hate the course for any reason? Email me at <a href="mailto:fireward.helpdesk@gmail.com">fireward.helpdesk@gmail.com</a> and I'll make it right.</p>
+  </div>
+
+  <!-- Track conversion and redirect -->
+  <script>
+    function trackAndRedirect() {
+      const transactionId = 'tx-' + Date.now(); // Generate a simple transaction ID
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-11533110779/fQziCKHN5PoaEPubtfsq',
+        'transaction_id': transactionId
+      });
+
+      setTimeout(() => {
+        window.open('https://firewardcourses.gumroad.com/l/js?wanted=true', '_blank');
+      }, 300);
+    }
+  </script>
+
+</body>
+</html>
