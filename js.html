@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11533110779" onload="gtagLoadComplete()"></script>
+  <!-- Global site tag (gtag.js) - Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11533110779"></script>
   <script>
-    function gtagLoadComplete() {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      window.gtag = gtag;
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11533110779');
+  </script>
 
-      gtag('js', new Date());
-      gtag('set', 'debug_mode', true); // Optional: shows debug output in console
-      gtag('config', 'AW-11533110779');
-      console.log("✅ Google Ads gtag loaded and configured.");
+  <!-- Event snippet for JS button conversion page -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof url !== 'undefined') {
+          window.location = url;
+        }
+      };
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-11533110779/F0GXCKu36voaEPubtfsq',
+        'transaction_id': 'tx-' + Date.now(),
+        'event_callback': callback
+      });
+
+      return false; // Prevent default if used in a link
     }
   </script>
 
@@ -47,10 +60,12 @@
       font-size: 1.2rem;
       font-weight: bold;
       padding: 1rem 2rem;
+      border: none;
       border-radius: 8px;
       text-decoration: none;
       margin-top: 2rem;
       transition: background-color 0.3s ease;
+      cursor: pointer;
     }
 
     .cta-button:hover {
@@ -76,36 +91,13 @@
 
   <p>Other than that, I hope you enjoy learning from my course as much as I enjoyed making it!</p>
 
-  <a class="cta-button" href="#" onclick="trackAndRedirect()">
+  <button class="cta-button" onclick="gtag_report_conversion('https://firewardcourses.gumroad.com/l/js?wanted=true')">
     Buy this course for $5
-  </a>
+  </button>
 
   <div class="footer">
     <p>Hate the course for any reason? Email me at <a href="mailto:fireward.helpdesk@gmail.com">fireward.helpdesk@gmail.com</a> and I'll make it right.</p>
   </div>
-
-  <!-- Track conversion and redirect -->
-  <script>
-    function trackAndRedirect() {
-      const transactionId = 'tx-' + Date.now();
-      console.log("🟠 Button clicked. Generated transaction ID:", transactionId);
-
-      if (typeof gtag === 'function') {
-        console.log("✅ gtag is defined. Firing conversion event...");
-        gtag('event', 'conversion', {
-          'send_to': 'AW-11533110779/fQziCKHN5PoaEPubtfsq',
-          'transaction_id': transactionId
-        });
-        console.log("✅ Conversion event sent to Google Ads.");
-      } else {
-        console.warn("❌ gtag is NOT defined. Conversion did not fire.");
-      }
-
-      setTimeout(() => {
-        window.open('https://firewardcourses.gumroad.com/l/js?wanted=true', '_blank');
-      }, 300);
-    }
-  </script>
 
 </body>
 </html>
