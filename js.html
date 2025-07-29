@@ -10,8 +10,9 @@
       window.gtag = gtag;
 
       gtag('js', new Date());
-      gtag('set', 'debug_mode', true); // Optional: for Google Ads debug info
+      gtag('set', 'debug_mode', true); // Optional: shows debug output in console
       gtag('config', 'AW-11533110779');
+      console.log("✅ Google Ads gtag loaded and configured.");
     }
   </script>
 
@@ -87,16 +88,17 @@
   <script>
     function trackAndRedirect() {
       const transactionId = 'tx-' + Date.now();
-      console.log("Tracking click with ID:", transactionId);
+      console.log("🟠 Button clicked. Generated transaction ID:", transactionId);
 
       if (typeof gtag === 'function') {
+        console.log("✅ gtag is defined. Firing conversion event...");
         gtag('event', 'conversion', {
           'send_to': 'AW-11533110779/fQziCKHN5PoaEPubtfsq',
           'transaction_id': transactionId
         });
-        console.log("Conversion tag sent.");
+        console.log("✅ Conversion event sent to Google Ads.");
       } else {
-        console.warn("gtag is not defined yet!");
+        console.warn("❌ gtag is NOT defined. Conversion did not fire.");
       }
 
       setTimeout(() => {
