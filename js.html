@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11533110779"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11533110779" onload="gtagLoadComplete()"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-11533110779');
+    function gtagLoadComplete() {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+
+      gtag('js', new Date());
+      gtag('set', 'debug_mode', true); // Optional: for Google Ads debug info
+      gtag('config', 'AW-11533110779');
+    }
   </script>
 
   <meta charset="UTF-8" />
@@ -81,12 +86,18 @@
   <!-- Track conversion and redirect -->
   <script>
     function trackAndRedirect() {
-      const transactionId = 'tx-' + Date.now(); // Generate a simple transaction ID
+      const transactionId = 'tx-' + Date.now();
+      console.log("Tracking click with ID:", transactionId);
 
-      gtag('event', 'conversion', {
-        'send_to': 'AW-11533110779/fQziCKHN5PoaEPubtfsq',
-        'transaction_id': transactionId
-      });
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-11533110779/fQziCKHN5PoaEPubtfsq',
+          'transaction_id': transactionId
+        });
+        console.log("Conversion tag sent.");
+      } else {
+        console.warn("gtag is not defined yet!");
+      }
 
       setTimeout(() => {
         window.open('https://firewardcourses.gumroad.com/l/js?wanted=true', '_blank');
