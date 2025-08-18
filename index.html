@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
+  <!-- Global site tag (gtag.js) - Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11533110779"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -9,20 +9,24 @@
     gtag('js', new Date());
     gtag('config', 'AW-11533110779');
   </script>
-  
+
+  <!-- Conversion function -->
   <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof url !== 'undefined') {
-          window.location = url;
-        }
-      };
+    function gtag_report_conversion() {
+      var url = "https://firewardcourses.gumroad.com/l/js?wanted=true";
 
       gtag('event', 'conversion', {
         'send_to': 'AW-11533110779/F0GXCKu36voaEPubtfsq',
         'transaction_id': 'tx-' + Date.now(),
-        'event_callback': callback
+        'event_callback': function() {
+          window.location = url;
+        }
       });
+
+      // Fallback redirect after 1s in case event doesn't return
+      setTimeout(function() {
+        window.location = url;
+      }, 1000);
 
       return false;
     }
@@ -111,7 +115,7 @@
       <li>✅ Debugger tips included</li>
     </ul>
     <p><strong>Price:</strong> $5 (one-time)</p>
-    <button class="course-button" onclick="return gtag_report_conversion('https://firewardcourses.gumroad.com/l/js?wanted=true')">
+    <button class="course-button" onclick="return gtag_report_conversion()">
       Buy on Gumroad — $5
     </button>
   </div>
