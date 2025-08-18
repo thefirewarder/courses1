@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11533110779"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11533110779');
+  </script>
+  
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof url !== 'undefined') {
+          window.location = url;
+        }
+      };
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-11533110779/F0GXCKu36voaEPubtfsq',
+        'transaction_id': 'tx-' + Date.now(),
+        'event_callback': callback
+      });
+
+      return false;
+    }
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fireward Courses</title>
@@ -49,6 +76,7 @@
       border-radius: 8px;
       text-decoration: none;
       transition: background-color 0.3s ease;
+      cursor: pointer;
     }
 
     .course-button:hover {
@@ -70,7 +98,7 @@
 <body>
 
   <h1>📚 Fireward Courses</h1>
-
+  
   <div class="course">
     <h2>JavaScript Crash Course</h2>
     <p>Master the fundamentals of JavaScript in an easy-to-follow, hands-on course. 
@@ -83,10 +111,11 @@
       <li>✅ Debugger tips included</li>
     </ul>
     <p><strong>Price:</strong> $5 (one-time)</p>
-    <a class="course-button" href="https://firewardcourses.gumroad.com/l/js" target="_blank">
+    <button class="course-button" onclick="return gtag_report_conversion('https://firewardcourses.gumroad.com/l/js?wanted=true')">
       Buy on Gumroad — $5
-    </a>
+    </button>
   </div>
+
   <div class="footer">
     <p>Questions or issues? Email <a href="mailto:fireward.helpdesk@gmail.com">fireward.helpdesk@gmail.com</a></p>
   </div>
