@@ -10,28 +10,44 @@
       background-color: #0f0f0f;
       color: #ffffff;
       padding: 2rem;
-      max-width: 700px;
+      max-width: 800px;
       margin: auto;
       line-height: 1.6;
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       color: #f97316;
       margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .course {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .course h2 {
+      margin-top: 0;
+      color: #f97316;
+    }
+
+    .course p {
+      margin: 0.5rem 0 1rem;
     }
 
     .course-button {
-      display: block;
+      display: inline-block;
       background-color: #f97316;
       color: #ffffff;
       font-size: 1.1rem;
       font-weight: bold;
-      padding: 1rem;
+      padding: 0.8rem 1.5rem;
       border-radius: 8px;
-      text-align: center;
       text-decoration: none;
-      margin-bottom: 1rem;
       transition: background-color 0.3s ease;
     }
 
@@ -43,6 +59,11 @@
       margin-top: 3rem;
       font-size: 0.9rem;
       color: #aaaaaa;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #f97316;
     }
   </style>
 </head>
@@ -50,10 +71,22 @@
 
   <h1>📚 Fireward Courses</h1>
 
-  <a class="course-button" href="js.html">JavaScript Course ($5)</a>
-  <!-- Add more courses below as needed -->
-  <!-- <a class="course-button" href="python.html">Python Crash Course ($5)</a> -->
-
+  <div class="course">
+    <h2>JavaScript Crash Course</h2>
+    <p>Master the fundamentals of JavaScript in an easy-to-follow, hands-on course. 
+       Includes interactive examples, quizzes, and a debugger guide to help you build a 
+       strong foundation in web development.</p>
+    <ul>
+      <li>✅ Beginner-friendly lessons</li>
+      <li>✅ Quizzes and coding challenges</li>
+      <li>✅ Real-world examples</li>
+      <li>✅ Debugger tips included</li>
+    </ul>
+    <p><strong>Price:</strong> $5 (one-time)</p>
+    <a class="course-button" href="https://firewardcourses.gumroad.com/l/js" target="_blank">
+      Buy on Gumroad — $5
+    </a>
+  </div>
   <div class="footer">
     <p>Questions or issues? Email <a href="mailto:fireward.helpdesk@gmail.com">fireward.helpdesk@gmail.com</a></p>
   </div>
