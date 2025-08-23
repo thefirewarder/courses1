@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Difference Between == and === in JavaScript</title>
+  <meta name="description" content="Learn the difference between == and === in JavaScript. Understand why strict equality matters and when to use each operator as a developer.">
+  <meta name="keywords" content="JavaScript equality, == vs ===, JavaScript beginner tips, coding mistakes, learn JavaScript fast">
+  
+  <!-- Open Graph for better social shares -->
+  <meta property="og:title" content="The Difference Between == and === in JavaScript">
+  <meta property="og:description" content="Learn the difference between == and === in JavaScript. Understand why strict equality matters and when to use each operator as a developer.">
+  <meta property="og:url" content="https://www.firewardcourses.com/blog/equals.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.firewardcourses.com/preview.png">
+
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #f97316;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    h2 {
+      color: #f97316;
+      margin-top: 1.5rem;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    code {
+      background-color: #1f1f1f;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      color: #facc15;
+    }
+
+    .content-box {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      margin-bottom: 2rem;
+    }
+
+    .cta {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .cta a {
+      display: inline-block;
+      background-color: #f97316;
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #ea580c;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaaaaa;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #f97316;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Difference Between <code>==</code> and <code>===</code> in JavaScript</h1>
+
+  <div class="content-box">
+    <p>This is a detail that our JavaScript course doesn’t cover, as it is too niche and doesn’t fit neatly into any one chapter. Since that’s the case, let’s explain it right here, right now.</p>
+
+    <h2>What’s the Difference?</h2>
+    <p>The basic premise is that <code>===</code> is stricter than <code>==</code>. That means it’s more hesitant to output <code>true</code>, and will only do so if both the value and type match.</p>
+    <p>For example, this outputs <code>true</code>:</p>
+    <p><code>2 == "2"</code></p>
+    <p>But this outputs <code>false</code>:</p>
+    <p><code>2 === "2"</code></p>
+
+    <p>Why? Because the <code>2</code> on the left is a number (an integer), while the <code>"2"</code> on the right is a string (text). They look the same, but they’re different types in JavaScript.</p>
+
+    <h2>Which One Should You Use?</h2>
+    <p>That’s fully up to you as the programmer, but in most scenarios—whether web dev, game dev, or app dev—using <code>===</code> (triple equals) is safer. It prevents unexpected results and makes your code more predictable.</p>
+
+    <h2>Wrapping It Up</h2>
+    <p>Well, there you have it: <code>==</code> checks only values, while <code>===</code> checks both values and types. Most of the time, stick with <code>===</code> for clean, reliable code.</p>
+  </div>
+
+  <div class="cta">
+    <a href="https://firewardcourses.com/index.html">🚀 Click here to start the full JavaScript Crash Course for $5</a>
+  </div>
+
+  <div class="footer">
+    <p>Questions? Email <a href="mailto:fireward.helpdesk@gmail.com">fireward.helpdesk@gmail.com</a></p>
+  </div>
+
+</body>
+</html>
