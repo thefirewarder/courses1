@@ -25,11 +25,38 @@
       color:#f97316;
     }
     header p { margin:0.3rem 0 0; color:#ccc; }
+
     main {
       max-width:760px;
       margin:auto;
       padding:2rem 1rem;
     }
+
+    /* --- Poster Section --- */
+    .poster-box {
+      background:#1a1a1a;
+      padding:2rem;
+      border-radius:12px;
+      text-align:center;
+      margin-top:1rem;
+      border:1px solid #333;
+    }
+    .poster-box img {
+      max-width:100%;
+      border-radius:10px;
+      box-shadow:0 0 20px rgba(249,115,22,0.3);
+      margin-bottom:1rem;
+    }
+    .poster-box h2 {
+      color:#f97316;
+      margin:0.5rem 0;
+    }
+    .poster-box p {
+      color:#ccc;
+      margin:0.5rem auto 1rem;
+      max-width:600px;
+    }
+
     .cta-box {
       background:#1a1a1a;
       padding:2rem;
@@ -38,6 +65,7 @@
       margin-top:2rem;
     }
     .cta-box h2 { color:#f97316; margin-top:0; }
+
     .price-banner {
       display:inline-block;
       background:#333;
@@ -47,6 +75,7 @@
       margin:0.5rem 0 1rem;
       font-size:1rem;
     }
+
     .cta-btn {
       background:#f97316;
       color:#fff;
@@ -57,11 +86,16 @@
       border-radius:8px;
       cursor:pointer;
       transition:background 0.3s;
+      text-decoration:none;
+      display:inline-block;
     }
     .cta-btn:hover { background:#ea580c; }
+
     .bullets { text-align:left; margin:1.5rem auto; }
     .bullets li { margin:0.6rem 0; }
+
     section { margin-top:3rem; }
+
     footer {
       text-align:center;
       padding:2rem 1rem;
@@ -78,10 +112,20 @@
   </header>
 
   <main>
+
+    <!-- Fireward Poster (above the fold) -->
+    <div class="poster-box">
+      <img src="poster-balance-of-code.jpg" alt="The Balance of Code Poster by Fireward">
+      <h2>The Balance of Code</h2>
+      <p>The 50–30–20 Rule of Coding Focus — a minimalist motivational poster for developers balancing learning, projects, and creativity.</p>
+      <a class="cta-btn" href="https://firewardcourses.gumroad.com/l/balanceofcode?wanted=true">Get the Poster – $3.99</a>
+    </div>
+
+    <!-- JavaScript Course Section -->
     <div class="cta-box">
       <h2>JavaScript Crash Course</h2>
       <span class="price-banner">🎉 Intro Price: $2.49 (reg. $5)</span>
-      <button class="cta-btn">Get Started</button>
+      <a class="cta-btn" href="https://firewardcourses.gumroad.com/l/js?wanted=true">Get Started</a>
       <ul class="bullets">
         <li>✔ Step-by-step lessons for total beginners</li>
         <li>✔ Hands-on coding challenges with feedback</li>
@@ -89,8 +133,6 @@
         <li>✔ 30-day money-back guarantee</li>
         <li>✔ Created by a teen developer passionate about teaching</li>
       </ul>
-      <a href="https://firewardcourses.gumroad.com/l/js?wanted=true">
-      </a>
     </div>
 
     <section>
