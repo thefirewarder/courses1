@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fireward – Games & Courses</title>
+  <meta name="description" content="Welcome to the Fireward Project gallery, full of games and tools made by a teen web developer.">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f0f0f;
+      color: #f97316;
+      font-family: 'Nunito', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
 
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.6em;
+      margin-bottom: 0.3em;
+    }
+
+    p {
+      color: #ccc;
+      margin-bottom: 2em;
+      max-width: 500px;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    a.button {
+      background-color: #1a1a1a;
+      border: 2px solid #f97316;
+      color: #f97316;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      transition: 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #f97316;
+      color: #0f0f0f;
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>🔥 Fireward Games Project Gallery</h1>
+    <p>Welcome to the Fireward Games Project Gallery! Choose a button below to dive in.</p>
+
+    <div class="button-container">
+      <a class="button" href="https://firewardgames.com/project-gallery/project/username-generator">
+        Funny Username Generator
+      </a>
+    </div>
+  </main>
+
+  <footer>Have any feedback? Email us at fireward.helpdesk@gmail.com and tell us what you think!</footer>
+</body>
+</html>
