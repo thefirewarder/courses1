@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fireward – Games & Courses</title>
-  <meta name="description" content="Welcome to the Fireward Project gallery, full of games and tools made by a teen web developer.">
+  <meta name="description" content="Welcome to the Fireward Project Gallery, full of games and tools made by a teen web developer.">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       padding: 0;
@@ -14,31 +17,34 @@
       font-family: 'Nunito', sans-serif;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
     }
-
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
     h1 {
       font-family: 'Orbitron', sans-serif;
-      font-size: 2.6em;
-      margin-bottom: 0.3em;
+      font-size: 2.4em;
+      margin-bottom: 0.4em;
     }
-
     p {
       color: #ccc;
-      margin-bottom: 2em;
+      margin: 10px 0 25px;
       max-width: 500px;
     }
-
     .button-container {
       display: flex;
+      justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
-      justify-content: center;
+      margin-bottom: 25px;
     }
-
     a.button {
       background-color: #1a1a1a;
       border: 2px solid #f97316;
@@ -49,18 +55,16 @@
       font-size: 1.1em;
       transition: 0.3s ease;
     }
-
     a.button:hover {
       background-color: #f97316;
       color: #0f0f0f;
       transform: scale(1.05);
     }
-
     footer {
-      position: absolute;
-      bottom: 10px;
+      padding: 15px 10px;
       font-size: 0.9em;
       color: #666;
+      text-align: center;
     }
   </style>
 </head>
@@ -74,9 +78,15 @@
       </a>
     </div>
     <p>Like what you see? A donation would mean a lot to me.</p>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Donate', '#72a4f2', 'X8X612SOGH');kofiwidget2.draw();</script> 
+    <script src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+    <script>
+      kofiwidget2.init('Donate', '#72a4f2', 'X8X612SOGH');
+      kofiwidget2.draw();
+    </script>
   </main>
 
-  <footer>Have any feedback? Email us at fireward.helpdesk@gmail.com and tell us what you think!</footer>
+  <footer>
+    Have any feedback? Email us at fireward.helpdesk@gmail.com and tell us what you think!
+  </footer>
 </body>
 </html>
