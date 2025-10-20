@@ -40,16 +40,20 @@
 
   <!-- Core Sections -->
   <url>
-    <loc>https://firewardgames.com/courses</loc>
+    <loc>https://firewardgames.com/courses.html</loc>
     <lastmod>2025-10-19</lastmod>
   </url>
   <url>
-    <loc>https://firewardgames.com/project-gallery/hub</loc>
+    <loc>https://firewardgames.com/project-gallery/hub.html</loc>
+    <lastmod>2025-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://firewardgames.com/project-gallery/project/username-generator.html</loc>
     <lastmod>2025-10-19</lastmod>
   </url>
   <url>
-    <loc>https://firewardgames.com/project-gallery/project/username-generator</loc>
-    <lastmod>2025-10-19</lastmod>
+    <loc>https://firewardgames.com/project-gallery/project/weatherbot.html</loc>
+    <lastmod>2025-10-20</lastmod>
   </url>
 
 </urlset>
