@@ -1,1 +1,103 @@
 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/brain.js@2.0.0-beta.2/dist/brain-browser.min.js"></script>
+</head>
+<body>
+  <h1>WeatherBot - Should you go outside today?</h1>
+  <p style="color: #bbb; font-style: italic;">
+Input some details about what the weather is like, and this bot will recommend whether you should go outside or not.
+While making this project, I learned about AI and how to use it to answer daily questions such as this one.
+</p>
+<script>
+  const nn = new brain.NeuralNetwork()
+  nn.train([
+  { input: { temp: 1, humid: 1, wind: 1 }, output: { out: 0 } },
+  { input: { temp: 0, humid: 1, wind: 1 }, output: { out: 0 } },
+  { input: { temp: 0, humid: 0.5, wind: 0.5 }, output: { out: 0 } },
+  { input: { temp: 0.6, humid: 0.6, wind: 0.08}, output: { out: 1 } },
+  { input: { temp: 0.75, humid: 0.25, wind: 0.08}, output: { out: 1 } },
+  { input: { temp: 0.6, humid: 0.6, wind: 0}, output: { out: 0.8 } },
+  { input: { temp: 0.75, humid: 0.25, wind: 0}, output: { out: 0.8 } },
+  { input: { temp: 0.3, humid: 0, wind: 1 }, output: { out: 0.3 } },
+  { input: { temp: 0.8, humid: 0, wind: 0.08}, output: { out: 1 } },
+  { input: { temp: 0.8, humid: 0, wind: 0.08}, output: { out: 1 } },
+  { input: { temp: 0.8, humid: 0, wind: 0}, output: { out: 0.8 } },
+  { input: { temp: 0.8, humid: 0, wind: 0}, output: { out: 0.8 } },
+  { input: { temp: 0.25, humid: 0.5, wind: 1 }, output: { out: 0.2 } },
+  { input: { temp: 0.32, humid: 1, wind: 1 }, output: { out: 0 } },
+  { input: { temp: 1, humid: 0.6, wind: 1 }, output: { out: 0 } },
+  { input: { temp: 0.4, humid: 0.1, wind: 0.08}, output: { out: 0.3} },
+  { input: { temp: 0.4, humid: 0.1, wind: 0}, output: { out: 0.5 } },
+  { input: { temp: 0.7, humid: 0.3, wind: 0.3 }, output: { out: 0.9 } },
+  { input: { temp: 0.5, humid: 0.5, wind: 0.5 }, output: { out: 0.5 } },
+  { input: { temp: 1, humid: 0, wind: 1 }, output: { out: 0.6 } },
+  { input: { temp: 0.2, humid: 0, wind: 0.08}, output: { out: 0.5 } },
+  { input: { temp: 0.2, humid: 0, wind: 0}, output: { out: 0.2 } },
+  { input: { temp: 0.4, humid: 0.9, wind: 0.2 }, output: { out: 0.1 } },
+  { input: { temp: 0.85, humid: 0.1, wind: 0.1 }, output: { out: 1 } },
+  { input: { temp: 0, humid: 0, wind: 1 }, output: { out: 0 } },
+  { input: { temp: 1, humid: 1, wind: 0.08}, output: { out: 0.2 } },
+  { input: { temp: 0.6, humid: 0.2, wind: 0.08}, output: { out: 1 } },
+  { input: { temp: 0.6, humid: 0.6, wind: 0.08}, output: { out: 0.5 } },
+  { input: { temp: 0, humid: 0, wind: 1 }, output: { out: 0 } },
+  { input: { temp: 1, humid: 1, wind: 0}, output: { out: 0.4 } },
+  { input: { temp: 0.6, humid: 0.2, wind: 0}, output: { out: 0.9 } },
+  { input: { temp: 0.6, humid: 0.6, wind: 0}, output: { out: 0.7 } },
+  { input: { temp: 1, humid: 0, wind: 0.8 }, output: { out: 0 } },
+  { input: { temp: 1, humid: 0, wind: 0.08}, output: { out: 0.1 } },
+  { input: { temp: 1, humid: 0, wind: 0}, output: { out: 0 } },
+  { input: { temp: 1, humid: 0, wind: 0.8 }, output: { out: 0 } },
+  { input: { temp: 1, humid: 0, wind: 0.08}, output: { out: 0.1 } },
+  { input: { temp: 1, humid: 0, wind: 0}, output: { out: 0 } },
+  { input: { temp: 1, humid: 0, wind: 0.3 }, output: { out: 0 } },
+  { input: { temp: 1, humid: 0, wind: 0.3 }, output: { out: 0 } },
+]);
+
+  const inTemp = parseInt(prompt("What temperature is it? (Degrees Fahrenheit)"))
+  const inHumid = parseInt(prompt("What is the humidity? (As a percentage)"))
+  const inWind = parseInt(prompt("What is the wind speed? (Miles per hour)"))
+  const result = nn.run({temp: inTemp/100, humid: inHumid/100, wind: inWind/50})
+  if(result.out > 0.5){
+    alert("I am "+Math.round(result.out*100)+"% sure that you should go outside.")
+  }
+  else{
+    alert("I am "+Math.round((1 - result.out)*100)+"% sure that you should stay inside.")
+  }
+  if(result.out < 0.75){
+    generateReason(inTemp/100,inHumid/100,inWind/50)
+  }
+  function generateReason(temp,humid,wind){
+  let reason = "Reasons not to go outside:"
+    if(temp > 0.9){
+      reason+=" Too hot."
+    }
+    else if(temp < 0.45){
+      reason+=" Too cold."
+    }
+    if(humid > 0.8){
+      reason+=" Too humid."
+    }
+    else if(humid < 0.05){
+      reason+=" Too dry."
+    }
+    if(wind > 0.5){
+      reason+=" Too windy."
+    }
+    if(reason !== "Reasons not to go outside:"){
+    alert(reason)
+    }
+    else{
+      if(result.out>=0.5){
+        alert("Looks good out there to me!")
+      }
+      else{
+        alert("There is no exact data trend saying why not to go outside today, but I still advise against it.")
+      }
+    }
+  }
+</script>
+</body>
+</html>
