@@ -1,1 +1,40 @@
-<iframe src="https://editor.p5js.org/Borisdachicken/full/xf2GxSd7o"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+      <button id="enter">Generate</button>
+      <p id="output" style="color: white;"></p>
+      <script>
+        let button =document.querySelector("#enter")
+        let output = document.querySelector("#output")
+        let adjs = ["Cool","Funny","Goofy","Crazy","Young","Old","Strange","Curious","Average","Typical","Weird","Cranky","Turbo","Shady","Sketchy","Stinky","Crying"]
+        let nouns = ["tiger","lion","giraffe","panda","dinosaur","oven","goober","doggie","kitty","lizard","ape","onion","cornball"]
+        let nums = ["1234","12345","224","42","153","0987","1029","123","1245","0921","1290","1000","2000","3000","4000","5000","6000","7000","8000","9000","67","41","6767","4141","6741","4167"]
+        button.addEventListener("click",()=>{
+          let rng = Math.floor(Math.random()*adjs.length)
+          let rng2 = Math.floor(Math.random()*nouns.length)
+          let rng3 = Math.floor(Math.random()*nums.length)
+          let adj=adjs[rng]
+          let noun=nouns[rng2]
+          let num = nums[rng3]
+         let username=adj+noun+num
+         if(Math.ceil(Math.random()*5)<5)
+           {
+          output.innerHTML=username
+           }
+          else{
+           output.innerHTML="x"+username+"x"  
+          }
+        })
+      </script>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
