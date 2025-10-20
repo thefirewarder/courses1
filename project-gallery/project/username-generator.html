@@ -9,8 +9,15 @@
   </head>
   <body>
     <main>
+      <h1>Stereotypical Username Generator</h1>
+      <hr>
+      <p style="color: #bbb; font-style: italic;">
+Generate random stereotypical gaming usernames like “CoolDoggie123” or “ShadyOnion42.”  
+Created as a fun JavaScript project that teaches randomization, arrays, and DOM manipulation.
+</p>
+      <hr>
       <button id="enter">Generate</button>
-      <p id="output" style="color: white;"></p>
+      <p id="output"></p>
       <script>
         let button =document.querySelector("#enter")
         let output = document.querySelector("#output")
@@ -34,6 +41,26 @@
           }
         })
       </script>
+      <style>
+        html{
+           background-color: black;
+          position: relative;
+          text-align: center;
+        }
+        #enter{
+          background-color: gray;
+          color: chartreuse;
+          width: 150px;
+          height: 50px;
+        }
+        #output{
+          color: white;
+           
+        }
+        h1{
+          color: white;
+        }
+      </style>
     </main>
     <script src="sketch.js"></script>
   </body>
