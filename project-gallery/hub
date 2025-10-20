@@ -68,12 +68,13 @@
   <main>
     <h1>🔥 Fireward Games Project Gallery</h1>
     <p>Welcome to the Fireward Games Project Gallery! Choose a button below to dive in.</p>
-
     <div class="button-container">
       <a class="button" href="https://firewardgames.com/project-gallery/project/username-generator">
         Funny Username Generator
       </a>
     </div>
+    <p>Like what you see? A donation would mean a lot to me.</p>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Donate', '#72a4f2', 'X8X612SOGH');kofiwidget2.draw();</script> 
   </main>
 
   <footer>Have any feedback? Email us at fireward.helpdesk@gmail.com and tell us what you think!</footer>
