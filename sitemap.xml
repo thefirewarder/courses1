@@ -1,44 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url>
     <loc>https://www.firewardgames.com/</loc>
     <lastmod>2025-10-19</lastmod>
   </url>
+
+  <!-- Blog Pages -->
   <url>
-    <loc>https:///firewardgames.com/blog/mistakes.html</loc>
+    <loc>https://www.firewardgames.com/blog/mistakes.html</loc>
+    <lastmod>2025-10-19</lastmod>
   </url>
-    <url>
+  <url>
     <loc>https://www.firewardgames.com/blog/equals.html</loc>
+    <lastmod>2025-10-19</lastmod>
   </url>
-   <url>
+  <url>
     <loc>https://www.firewardgames.com/blog/startyoung.html</loc>
+    <lastmod>2025-10-19</lastmod>
   </url>
   <url>
     <loc>https://www.firewardgames.com/blog/easier.html</loc>
+    <lastmod>2025-10-19</lastmod>
   </url>
+
+  <!-- Legal / Info -->
   <url>
     <loc>https://www.firewardgames.com/privacy.html</loc>
+    <lastmod>2025-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.firewardgames.com/aboutus.html</loc>
+    <lastmod>2025-10-19</lastmod>
   </url>
   <url>
     <loc>https://www.firewardgames.com/ads.txt</loc>
   </url>
+
+  <!-- Core Sections -->
   <url>
-    <loc>https://www.firewardgames.com/aboutus.html</loc>
+    <loc>https://www.firewardgames.com/courses</loc>
+    <lastmod>2025-10-19</lastmod>
   </url>
   <url>
-      <loc>https://www.firewardgames.com/courses</loc>
-      <lastmod>2025-10-19</lastmod>
+    <loc>https://www.firewardgames.com/project-gallery/hub</loc>
+    <lastmod>2025-10-19</lastmod>
   </url>
   <url>
-      <loc>https://www.firewardgames.com/courses</loc>
-      <lastmod>2025-10-19</lastmod>
+    <loc>https://www.firewardgames.com/project-gallery/project/username-generator</loc>
+    <lastmod>2025-10-19</lastmod>
   </url>
-  <url>
-      <loc>https://www.firewardgames.com/project-gallery/hub</loc>
-      <lastmod>2025-10-19</lastmod>
-  </url>
-  <url>
-      <loc>https://www.firewardgames.com/project-gallery/project/username-generator</loc>
-      <lastmod>2025-10-19</lastmod>
-  </url>
+
 </urlset>
