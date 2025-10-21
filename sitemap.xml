@@ -76,4 +76,43 @@
     <loc>https://firewardgames.com/es/privacy.html</loc>
     <lastmod>2025-10-20</lastmod>
   </url>
+   <url>
+    <loc>https://firewardgames.com/hi/</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Courses (Hindi) -->
+  <url>
+    <loc>https://firewardgames.com/hi/courses.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Us (Hindi) -->
+  <url>
+    <loc>https://firewardgames.com/hi/aboutus.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Privacy Policy (Hindi) -->
+  <url>
+    <loc>https://firewardgames.com/hi/privacy.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Project Gallery Hub (Hindi) -->
+  <url>
+    <loc>https://firewardgames.com/hi/project-gallery/hub.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
