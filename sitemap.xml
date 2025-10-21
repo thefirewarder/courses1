@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://firewardgames.com/</loc>
-    <lastmod>2025-10-19</lastmod>
+    <lastmod>2025-10-21</lastmod>
   </url>
 
   <!-- Blog Pages -->
@@ -28,11 +28,11 @@
   <!-- Legal / Info -->
   <url>
     <loc>https://firewardgames.com/privacy.html</loc>
-    <lastmod>2025-10-19</lastmod>
+    <lastmod>2025-10-21</lastmod>
   </url>
   <url>
     <loc>https://firewardgames.com/aboutus.html</loc>
-    <lastmod>2025-10-19</lastmod>
+    <lastmod>2025-10-21</lastmod>
   </url>
   <url>
     <loc>https://firewardgames.com/ads.txt</loc>
@@ -41,11 +41,11 @@
   <!-- Core Sections -->
   <url>
     <loc>https://firewardgames.com/courses.html</loc>
-    <lastmod>2025-10-19</lastmod>
+    <lastmod>2025-10-21</lastmod>
   </url>
   <url>
     <loc>https://firewardgames.com/project-gallery/hub.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-21</lastmod>
   </url>
   <url>
     <loc>https://firewardgames.com/project-gallery/project/username-generator.html</loc>
@@ -53,32 +53,32 @@
   </url>
   <url>
     <loc>https://firewardgames.com/project-gallery/project/weatherbot.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-19</lastmod>
   </url>
 
  <url>
     <loc>https://firewardgames.com/es/</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-21</lastmod>
   </url>
   <url>
     <loc>https://firewardgames.com/es/courses.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-21</lastmod>
   </url>
   <url>
     <loc>https://firewardgames.com/es/project-gallery/hub.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-21</lastmod>
   </url>
   <url>
     <loc>https://firewardgames.com/es/about.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-21</lastmod>
   </url>
   <url>
     <loc>https://firewardgames.com/es/privacy.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-21</lastmod>
   </url>
    <url>
     <loc>https://firewardgames.com/hi/</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -86,7 +86,7 @@
   <!-- Courses (Hindi) -->
   <url>
     <loc>https://firewardgames.com/hi/courses.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -94,7 +94,7 @@
   <!-- About Us (Hindi) -->
   <url>
     <loc>https://firewardgames.com/hi/aboutus.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -102,7 +102,7 @@
   <!-- Privacy Policy (Hindi) -->
   <url>
     <loc>https://firewardgames.com/hi/privacy.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -110,9 +110,46 @@
   <!-- Project Gallery Hub (Hindi) -->
   <url>
     <loc>https://firewardgames.com/hi/project-gallery/hub.html</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+<url>
+    <loc>https://firewardgames.com/zh/</loc>
+    <lastmod>2025-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Courses (Hindi) -->
+  <url>
+    <loc>https://firewardgames.com/zh/courses.html</loc>
+    <lastmod>2025-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- About Us (Hindi) -->
+  <url>
+    <loc>https://firewardgames.com/zh/aboutus.html</loc>
+    <lastmod>2025-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Privacy Policy (Hindi) -->
+  <url>
+    <loc>https://firewardgames.com/zh/privacy.html</loc>
+    <lastmod>2025-10-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Project Gallery Hub (Hindi) -->
+  <url>
+    <loc>https://firewardgames.com/zh/project-gallery/hub.html</loc>
+    <lastmod>2025-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
