@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fireward – Juegos y Cursos</title>
+  <meta name="description" content="Bienvenido a la Galería de Proyectos de Fireward, llena de juegos y herramientas creados por un joven desarrollador web.">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f0f0f;
+      color: #f97316;
+      font-family: 'Nunito', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.4em;
+      margin-bottom: 0.4em;
+    }
+    p {
+      color: #ccc;
+      margin: 10px 0 25px;
+      max-width: 500px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+    a.button {
+      background-color: #1a1a1a;
+      border: 2px solid #f97316;
+      color: #f97316;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      transition: 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #f97316;
+      color: #0f0f0f;
+      transform: scale(1.05);
+    }
+    footer {
+      padding: 15px 10px;
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: #f97316;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>🔥 Galería de Proyectos de Fireward Games</h1>
+    <p>¡Bienvenido a la Galería de Proyectos de Fireward Games! Elige un botón abajo para comenzar.</p>
+
+    <div class="button-container">
+      <a class="button" href="https://firewardgames.com/project-gallery/project/username-generator.html">
+        Generador Divertido de Nombres de Usuario
+      </a>
+      <a class="button" href="https://firewardgames.com/project-gallery/project/weatherbot.html">
+        Bot del Clima
+      </a>
+    </div>
+
+    <p>¿Te gusta lo que ves? Por favor dona. Doy el 10% a la organización Girls Who Code, dedicada a hacer que la programación sea igualmente accesible para todos.</p>
+
+    <script src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+    <script>
+      kofiwidget2.init('Donar', '#72a4f2', 'X8X612SOGH');
+      kofiwidget2.draw();
+    </script>
+
+    <nav>
+      <a href="/es/">Inicio</a> |
+      <a href="/es/courses.html">Cursos</a> |
+      <a href="/es/about.html">Acerca de</a> |
+      <a href="/es/privacy.html">Privacidad</a>
+    </nav>
+  </main>
+
+  <footer>
+    ¿Tienes comentarios? Escríbenos a <a href="mailto:fireward.helpdesk@gmail.com">fireward.helpdesk@gmail.com</a> y dinos qué piensas.
+  </footer>
+</body>
+</html>
